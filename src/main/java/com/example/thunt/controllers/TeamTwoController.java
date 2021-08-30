@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value="/team2",method = RequestMethod.GET)
-public class Controller2 {
+public class TeamTwoController {
 
     @GetMapping("/test")
     public String test(){
