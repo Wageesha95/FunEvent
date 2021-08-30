@@ -39,13 +39,13 @@ public class TeamTwoController {
     }
 
     @GetMapping("/Yatawara")
-    public String stage4(){
+    public String stage4() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 4  :  TEAM 2  ");
         System.out.println(" ***************************** ");
         return "team2/team2_stage_4.html";
 
 
-
+    }
 
 }
