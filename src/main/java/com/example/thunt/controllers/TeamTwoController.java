@@ -126,7 +126,7 @@ public class TeamTwoController {
         return "team2/team1_stage_14.html";
     }
 
-    @GetMapping("/40°25′06″N 3°41′41″W")
+    @GetMapping("/40°25′06″N 3°41′41″W 000")
     public String stage15() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 15  :  TEAM 2  ");
@@ -134,7 +134,7 @@ public class TeamTwoController {
         return "team2/team1_stage_15.html";
     }
 
-    @GetMapping("/40°25′06″N 3°41′41″W")
+    @GetMapping("/40°25′06″N 3°41′41″W 111")
     public String stage16() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 16  :  TEAM 2  ");
@@ -142,7 +142,7 @@ public class TeamTwoController {
         return "team2/team1_stage_15.html";
     }
 
-    @GetMapping("/40.4440°N 3.6935°W")
+    @GetMapping("/40.4440°N 3.6935°W  222")
     public String stage17() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 17  :  TEAM 2  ");
@@ -150,7 +150,7 @@ public class TeamTwoController {
         return "team2/team1_stage_17.html";
     }
 
-    @GetMapping("/40.4440°N 3.6935°W")
+    @GetMapping("/40.4440°N 3.6935°W  333")
     public String stage18() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 17  :  TEAM 2  ");
@@ -158,7 +158,7 @@ public class TeamTwoController {
         return "team2/team1_stage_18.html";
     }
 
-    @GetMapping("/40.4440°N 3.6935°W")
+    @GetMapping("/40.4440°N 3.6935°W  444")
     public String stage19() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 17  :  TEAM 2  ");
