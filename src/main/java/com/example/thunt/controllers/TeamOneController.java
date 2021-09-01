@@ -38,4 +38,62 @@ public class TeamOneController {
         return "team1/team1_stage_3.html";
     }
 
+    @GetMapping("/Tashira")
+    public String stage4() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 4  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team1/team1_stage_4.html";
+    }
+    @GetMapping("/Shanilka")
+    public String stage5() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 5  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team1/team1_stage_5.html";
+    }
+
+    @GetMapping("/Rome=Hasantha")
+    public String stage6() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 6  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team1/team1_stage_6.html";
+    }
+
+    @GetMapping("/Titanic")
+    public String stage7() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 7  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team1/team1_stage_7.html";
+    }
+
+    @GetMapping("/EWR")
+    public String stage8() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 8  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team1/team1_stage_8.html";
+    }
+
+    @GetMapping("/UA 90")
+    public String stage9() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 9  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team1/team1_stage_9.html";
+    }
+
+    @GetMapping("/Tharindu")
+    public String stage10() {
+        System.out.println(" ***************************** ");
+        System.out.println(" Entered To Stage 10  :  TEAM 1  ");
+        System.out.println(" ***************************** ");
+        return "team2/team1_stage_10.html";
+    }
+
+
+
+
 }
