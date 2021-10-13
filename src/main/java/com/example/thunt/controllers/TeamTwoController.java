@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping(value="/team2",method = RequestMethod.GET)
@@ -46,7 +47,7 @@ public class TeamTwoController {
         return "team2/team2_stage_4.html";
     }
 
-    @GetMapping("/Nuwan")
+    @GetMapping("/Yashoda")
     public String stage5() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 5  :  TEAM 2  ");
@@ -62,7 +63,7 @@ public class TeamTwoController {
         return "team2/team2_stage_6.html";
     }
 
-    @GetMapping("/Titanic")
+    @GetMapping("/41°43′32″N 49°56′49″W")
     public String stage7() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 7  :  TEAM 2  ");
@@ -83,7 +84,7 @@ public class TeamTwoController {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 9  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_9.html";
+        return "team2/team2_stage_9.html";
     }
 
     @GetMapping("/Tharindu")
@@ -91,7 +92,7 @@ public class TeamTwoController {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 10  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_10.html";
+        return "team2/team2_stage_10.html";
     }
 
     @GetMapping("/Los Angeles")
@@ -99,7 +100,7 @@ public class TeamTwoController {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 11  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_11.html";
+        return "team2/team2_stage_11.html";
     }
 
     @GetMapping("/Lakmini")
@@ -107,7 +108,7 @@ public class TeamTwoController {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 12  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_12.html";
+        return "team2/team2_stage_12.html";
     }
 
     @GetMapping("/temp")
@@ -115,7 +116,7 @@ public class TeamTwoController {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 13  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_13.html";
+        return "team2/team2_stage_13.html";
     }
 
     @GetMapping("/UA 8022")
@@ -123,47 +124,60 @@ public class TeamTwoController {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 14  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_14.html";
+        return "team2/team2_stage_14.html";
     }
 
-    @GetMapping("/40°25′06″N 3°41′41″W 000")
+    @GetMapping("/Kleinburg")
     public String stage15() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 15  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_15.html";
+        return "team2/team2_stage_15.html";
     }
 
-    @GetMapping("/40°25′06″N 3°41′41″W 111")
+    @GetMapping("/2")
     public String stage16() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 16  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_15.html";
+        return "team2/team2_stage_16.html";
     }
 
-    @GetMapping("/40.4440°N 3.6935°W  222")
+    @GetMapping("/40.4440°N 3.6935°W")
     public String stage17() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 17  :  TEAM 2  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_17.html";
+        return "team2/team2_stage_17.html";
     }
 
-    @GetMapping("/40.4440°N 3.6935°W  333")
+    @GetMapping("/safe")
     public String stage18() {
         System.out.println(" ***************************** ");
-        System.out.println(" Entered To Stage 17  :  TEAM 2  ");
+        System.out.println(" Entered To Stage 18  :  TEAM 2  ");
         System.out.println(" ***************************** ");
         return "team2/team1_stage_18.html";
     }
 
-    @GetMapping("/40.4440°N 3.6935°W  444")
-    public String stage19() {
+    @GetMapping("/passcode")
+    public String stage19(@RequestParam(required = false) String A, String B, String C, String D, String E, String F, String G) {
+        if (A != null && B != null && C != null && D != null && E != null && F != null && G != null) {
+            if (A.equals("067")  && B.equals("101") && C.equals("112")  && D.equals("104")  && E.equals("101")  && F.equals("117")  && G.equals("115")) {
+                System.out.println(" ***************************** ");
+                System.out.println(" Game END  ");
+                System.out.println(" ***************************** ");
+                return "team2/team2_stage_19.html";
+            } else {
+                System.out.println(" ***************************** ");
+                System.out.println(" Wrong Pass Code  ");
+                System.out.println(" ***************************** ");
+                return "team2/team2_stage_18.html";
+            }
+        }
         System.out.println(" ***************************** ");
-        System.out.println(" Entered To Stage 17  :  TEAM 2  ");
+        System.out.println(" Wrong Pass Code  ");
         System.out.println(" ***************************** ");
-        return "team2/team1_stage_19.html";
+        return "team2/team2_stage_18.html";
     }
 
 
