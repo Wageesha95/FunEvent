@@ -111,7 +111,7 @@ public class TeamTwoController {
         return "team2/team2_stage_12.html";
     }
 
-    @GetMapping("/temp")
+    @GetMapping("/Y")
     public String stage13() {
         System.out.println(" ***************************** ");
         System.out.println(" Entered To Stage 13  :  TEAM 2  ");
